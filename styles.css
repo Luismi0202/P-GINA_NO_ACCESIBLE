@@ -1,0 +1,47 @@
+        /* Texto con contraste aceptable y tamaño normal para que visualmente parezca correcto */
+        body {
+            color: #222;
+            background: #fff;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+        .importante {
+            color: #333;
+            background: #eaeaea;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        /* Elementos interactivos sin foco visible */
+        a, button, input {
+            outline: none;
+        }
+        /* Oculta el borde de foco para teclado */
+        a:focus, button:focus, input:focus {
+            outline: none;
+        }
+        /* Maquetación visualmente correcta usando tabla */
+        .contenedor {
+            width: 80%;
+            margin: 40px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        /* Botón visualmente atractivo pero sin accesibilidad */
+        .btn {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #carro{
+            height:80px;
+            width: 60px;
+        }
