@@ -3,52 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Página No Accesible</title>
-    <!-- No se usan etiquetas meta para accesibilidad ni viewport (esto afecta a usuarios de móviles y lectores de pantalla) -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+    <!--PARTE 1 ERRORES:5-->
     <div class="contenedor">
-        <!-- Imagen decorativa sin alt (parece correcta pero no es accesible) -->
         <img src="./logo.png">
-        <!-- Imagen con texto importante, sin alt -->
         <img src="./texto-importante.png">
-        <!-- Maquetación con tabla en vez de CSS grid/flex -->
         <table>
             <tr>
                 <td>
-                    <!-- Enlace con texto genérico, no describe el destino -->
                     <a href="#">Ver más</a>
                 </td>
                 <td>
-                    <!-- Botón sin texto ni aria-label, solo icono visual -->
                     <button class="btn">
                         <img src="./icono.png" id="carro">
                     </button>
                 </td>
             </tr>
         </table>
-        <!-- Uso de divs en vez de etiquetas semánticas como <main>, <section>, <nav> -->
+
+        <!--PARTE 2 ERRORES: 2-->
         <div>
             <div class="importante">
                 Bienvenido a nuestra página web.
             </div>
-            <!-- Texto importante solo con color, sin icono ni negrita -->
             <div style="color: #e53935;">
                 ¡Atención! Oferta limitada.
             </div>
         </div>
-        <!-- No se usan encabezados h1, h2, etc. (solo un span grande) -->
         <span style="font-size:28px; display:block; margin: 20px 0;">Título principal</span>
-        <!-- Formulario sin etiquetas label ni descripciones -->
+
+        <!--PARTE 3 ERRORES:1-->
         <form>
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="Correo">
             <input type="submit" value="Enviar" class="btn">
         </form>
-        <!-- Enlace sin contexto -->
-        <a href="#">Leer más</a>
-        <!-- No se usan roles ARIA ni landmarks -->
-        <!-- No hay skip links ni navegación por teclado -->
+        <a href="#">PULSA AQUI...</a>
     </div>
 </body>
 </html>
